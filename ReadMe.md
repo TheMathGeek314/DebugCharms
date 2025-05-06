@@ -7,4 +7,5 @@ Added features include:
 - Removing individual charms
 - Toggling between fragile and unbreakable charms
 - Breaking fragile charms
+
 *Standard DebugMod already features fixing fragiles, incrementing grimmchild/kingsoul, and granting/revoking ALL charms*
