@@ -344,12 +344,9 @@ namespace DebugCharms {
         [BindableMethod(name = "Give Kingsoul", category = "Give Charms 4")]
         public static void giveCharmKingsoul() {
             PlayerData.instance.gotCharm_36 = true;
-            if(PlayerData.instance.royalCharmState == 0) {
-                PlayerData.instance.royalCharmState = 3;
-            }
-            string royal = PlayerData.instance.royalCharmState == 4 ? "Void Heart" : "Kingsoul";
+            PlayerData.instance.royalCharmState = 3;
             PlayerData.instance.CountCharms();
-            Console.AddLine($"Added {royal} to inventory");
+            Console.AddLine($"Added Kingsoul to inventory");
         }
 
         //Remove individual charms
@@ -633,6 +630,7 @@ namespace DebugCharms {
         public static void takeCharmKingsoul() {
             PlayerData.instance.gotCharm_36 = false;
             string royal = PlayerData.instance.royalCharmState == 4 ? "Void Heart" : "Kingsoul";
+            PlayerData.instance.royalCharmState = 0;
             PlayerData.instance.CountCharms();
             Console.AddLine($"Removed {royal} from inventory");
         }
