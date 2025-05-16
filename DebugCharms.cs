@@ -7,7 +7,7 @@ using UnityEngine;
 namespace DebugCharms {
     public class DebugCharms: Mod {
         new public string GetName() => "DebugCharms";
-        public override string GetVersion() => "1.0.0.0";
+        public override string GetVersion() => "1.0.1.0";
         internal static DebugCharms instance { get; private set; }
 
         public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects) {

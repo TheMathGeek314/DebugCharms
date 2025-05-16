@@ -67,572 +67,439 @@ namespace DebugCharms {
         //Give individual charms
         [BindableMethod(name = "Give Wayward Compass", category = "Give Charms 1")]
         public static void giveCharmCompass() {
-            PlayerData.instance.gotCharm_2 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Wayward Compass to inventory");
+            addCharmGeneric(2, "Wayward Compass");
         }
 
         [BindableMethod(name = "Give Gathering Swarm", category = "Give Charms 1")]
         public static void giveCharmSwarm() {
-            PlayerData.instance.gotCharm_1 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Gathering Swarm to inventory");
+            addCharmGeneric(1, "Gathering Swarm");
         }
 
         [BindableMethod(name = "Give Stalwart Shell", category = "Give Charms 1")]
         public static void giveCharmStalwart() {
-            PlayerData.instance.gotCharm_4 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Stalwart Shell to inventory");
+            addCharmGeneric(4, "Stalwart Shell");
         }
 
         [BindableMethod(name = "Give Soul Catcher", category = "Give Charms 1")]
         public static void giveCharmCatcher() {
-            PlayerData.instance.gotCharm_20 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Soul Catcher to inventory");
+            addCharmGeneric(20, "Soul Catcher");
         }
 
         [BindableMethod(name = "Give Shaman Stone", category = "Give Charms 1")]
         public static void giveCharmShaman() {
-            PlayerData.instance.gotCharm_19 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Shaman Stone to inventory");
+            addCharmGeneric(19, "Shaman Stone");
         }
 
         [BindableMethod(name = "Give Soul Eater", category = "Give Charms 1")]
         public static void giveCharmEater() {
-            PlayerData.instance.gotCharm_21 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Soul Eater to inventory");
+            addCharmGeneric(21, "Soul Eater");
         }
 
         [BindableMethod(name = "Give Dashmaster", category = "Give Charms 1")]
         public static void giveCharmDashmaster() {
-            PlayerData.instance.gotCharm_31 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Dashmaster to inventory");
+            addCharmGeneric(31, "Dashmaster");
         }
 
         [BindableMethod(name = "Give Sprintmaster", category = "Give Charms 1")]
         public static void giveCharmSprintmaster() {
-            PlayerData.instance.gotCharm_37 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Sprintmaster to inventory");
+            addCharmGeneric(37, "Sprintmaster");
         }
 
         [BindableMethod(name = "Give Grubsong", category = "Give Charms 1")]
         public static void giveCharmGrubsong() {
-            PlayerData.instance.gotCharm_3 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Grubsong to inventory");
+            addCharmGeneric(3, "Grubsong");
         }
 
         [BindableMethod(name = "Give Grubberfly's Elegy", category = "Give Charms 1")]
         public static void giveCharmElegy() {
-            PlayerData.instance.gotCharm_35 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Grubberfly's Elegy to inventory");
+            addCharmGeneric(35, "Grubberfly's Elegy");
         }
 
         [BindableMethod(name = "Give Fragile Heart", category = "Give Charms 2")]
         public static void giveCharmFHeart() {
-            PlayerData.instance.gotCharm_23 = true;
             string fragile = PlayerData.instance.fragileHealth_unbreakable ? "Unbreakable" : "Fragile";
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Added {fragile} Heart to inventory");
+            addCharmGeneric(23, $"{fragile} Heart");
         }
 
         [BindableMethod(name = "Give Fragile Greed", category = "Give Charms 2")]
         public static void giveCharmFGreed() {
-            PlayerData.instance.gotCharm_24 = true;
             string fragile = PlayerData.instance.fragileGreed_unbreakable ? "Unbreakable" : "Fragile";
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Added {fragile} Greed to inventory");
+            addCharmGeneric(24, $"{fragile} Greed");
         }
 
         [BindableMethod(name = "Give Fragile Strength", category = "Give Charms 2")]
         public static void giveCharmFStrength() {
-            PlayerData.instance.gotCharm_25 = true;
             string fragile = PlayerData.instance.fragileStrength_unbreakable ? "Unbreakable" : "Fragile";
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Added {fragile} Strength to inventory");
+            addCharmGeneric(25, $"{fragile} Strength");
         }
 
         [BindableMethod(name = "Give Spell Twister", category = "Give Charms 2")]
         public static void giveCharmTwister() {
-            PlayerData.instance.gotCharm_33 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Spell Twister to inventory");
+            addCharmGeneric(33, "Spell Twister");
         }
 
         [BindableMethod(name = "Give Steady Body", category = "Give Charms 2")]
         public static void giveCharmSBody() {
-            PlayerData.instance.gotCharm_14 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Steady Body to inventory");
+            addCharmGeneric(14, "Steady Body");
         }
 
         [BindableMethod(name = "Give Heavy Blow", category = "Give Charms 2")]
         public static void giveCharmHBlow() {
-            PlayerData.instance.gotCharm_15 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Heavy Blow to inventory");
+            addCharmGeneric(15, "Heavy Blow");
         }
 
         [BindableMethod(name = "Give Quick Slash", category = "Give Charms 2")]
         public static void giveCharmQSlash() {
-            PlayerData.instance.gotCharm_32 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Quick Slash to inventory");
+            addCharmGeneric(32, "Quick Slash");
         }
 
         [BindableMethod(name = "Give Longnail", category = "Give Charms 2")]
         public static void giveCharmLongnail() {
-            PlayerData.instance.gotCharm_18 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Longnail to inventory");
+            addCharmGeneric(18, "Longnail");
         }
 
         [BindableMethod(name = "Give Mark of Pride", category = "Give Charms 2")]
         public static void giveCharmMop() {
-            PlayerData.instance.gotCharm_13 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Mark of Pride to inventory");
+            addCharmGeneric(13, "Mark of Pride");
         }
 
         [BindableMethod(name = "Give Fury of the Fallen", category = "Give Charms 2")]
         public static void giveCharmFury() {
-            PlayerData.instance.gotCharm_6 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Fury of the Fallen to inventory");
+            addCharmGeneric(6, "Fury of the Fallen");
         }
 
         [BindableMethod(name = "Give Thorns of Agony", category = "Give Charms 3")]
         public static void giveCharmThorns() {
-            PlayerData.instance.gotCharm_12 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Thorns of Agony to inventory");
+            addCharmGeneric(12, "Thorns of Agony");
         }
 
         [BindableMethod(name = "Give Baldur Shell", category = "Give Charms 3")]
         public static void giveCharmBaldur() {
-            PlayerData.instance.gotCharm_5 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Baldur Shell to inventory");
+            addCharmGeneric(5, "Baldur Shell");
         }
 
         [BindableMethod(name = "Give Flukenest", category = "Give Charms 3")]
         public static void giveCharmFlukenest() {
-            PlayerData.instance.gotCharm_11 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Flukenest to inventory");
+            addCharmGeneric(11, "Flukenest");
         }
 
         [BindableMethod(name = "Give Defender's Crest", category = "Give Charms 3")]
         public static void giveCharmDCrest() {
-            PlayerData.instance.gotCharm_10 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Defender's Crest to inventory");
+            addCharmGeneric(10, "Defender's Crest");
         }
 
         [BindableMethod(name = "Give Glowing Womb", category = "Give Charms 3")]
         public static void giveCharmWomb() {
-            PlayerData.instance.gotCharm_22 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Glowing Womb to inventory");
+            addCharmGeneric(22, "Glowing Womb");
         }
 
         [BindableMethod(name = "Give Quick Focus", category = "Give Charms 3")]
         public static void giveCharmQFocus() {
-            PlayerData.instance.gotCharm_7 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Quick Focus to inventory");
+            addCharmGeneric(7, "Quick Focus");
         }
 
         [BindableMethod(name = "Give Deep Focus", category = "Give Charms 3")]
         public static void giveCharmDFocus() {
-            PlayerData.instance.gotCharm_34 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Deep Focus to inventory");
+            addCharmGeneric(34, "Deep Focus");
         }
 
         [BindableMethod(name = "Give Lifeblood Heart", category = "Give Charms 3")]
         public static void giveCharmLHeart() {
-            PlayerData.instance.gotCharm_8 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Lifeblood Heart to inventory");
+            addCharmGeneric(8, "Lifeblood Heart");
         }
 
         [BindableMethod(name = "Give Lifeblood Core", category = "Give Charms 3")]
         public static void giveCharmLCore() {
-            PlayerData.instance.gotCharm_9 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Lifeblood Core to inventory");
+            addCharmGeneric(9, "Lifeblood Core");
         }
 
         [BindableMethod(name = "Give Joni's Blessing", category = "Give Charms 3")]
         public static void giveCharmJoni() {
-            PlayerData.instance.gotCharm_27 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Joni's Blessing to inventory");
+            addCharmGeneric(27, "Joni's Blessing");
         }
 
         [BindableMethod(name = "Give Hiveblood", category = "Give Charms 4")]
         public static void giveCharmHive() {
-            PlayerData.instance.gotCharm_29 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Hiveblood to inventory");
+            addCharmGeneric(29, "Hiveblood");
         }
 
         [BindableMethod(name = "Give Spore Shroom", category = "Give Charms 4")]
         public static void giveCharmSpore() {
-            PlayerData.instance.gotCharm_17 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Spore Shroom to inventory");
+            addCharmGeneric(17, "Spore Shroom");
         }
 
         [BindableMethod(name = "Give Sharp Shadow", category = "Give Charms 4")]
         public static void giveCharmSShadow() {
-            PlayerData.instance.gotCharm_16 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Sharp Shadow to inventory");
+            addCharmGeneric(16, "Sharp Shadow");
         }
 
         [BindableMethod(name = "Give Shape of Unn", category = "Give Charms 4")]
         public static void giveCharmUnn() {
-            PlayerData.instance.gotCharm_28 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Shape of Unn to inventory");
+            addCharmGeneric(28, "Shape of Unn");
         }
 
         [BindableMethod(name = "Give Nailmaster's Glory", category = "Give Charms 4")]
         public static void giveCharmNMG() {
-            PlayerData.instance.gotCharm_26 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Nailmaster's Glory to inventory");
+            addCharmGeneric(26, "Nailmaster's Glory");
         }
 
         [BindableMethod(name = "Give Weaversong", category = "Give Charms 4")]
         public static void giveCharmWeavers() {
-            PlayerData.instance.gotCharm_39 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Weaversong to inventory");
+            addCharmGeneric(39, "Weaversong");
         }
 
         [BindableMethod(name = "Give Dream Wielder", category = "Give Charms 4")]
         public static void giveCharmWielder() {
-            PlayerData.instance.gotCharm_30 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Dream Wielder to inventory");
+            addCharmGeneric(30, "Dream Wielder");
         }
 
         [BindableMethod(name = "Give Dreamshield", category = "Give Charms 4")]
         public static void giveCharmDShield() {
-            PlayerData.instance.gotCharm_38 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Dreamshield to inventory");
+            addCharmGeneric(38, "Dreamshield");
         }
 
         [BindableMethod(name = "Give Grimmchild", category = "Give Charms 4")]
         public static void giveCharmGrimm() {
-            PlayerData.instance.gotCharm_40 = true;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Added Grimmchild to inventory");
+            addCharmGeneric(40, "Grimmchild");
         }
 
         [BindableMethod(name = "Give Kingsoul", category = "Give Charms 4")]
         public static void giveCharmKingsoul() {
-            PlayerData.instance.gotCharm_36 = true;
             PlayerData.instance.royalCharmState = 3;
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Added Kingsoul to inventory");
+            PlayerData.instance.gotShadeCharm = false;
+            PlayerData.instance.charmCost_36 = 5;
+            addCharmGeneric(36, "Kingsoul");
         }
 
         //Remove individual charms
         [BindableMethod(name = "Remove Wayward Compass", category = "Remove Charms 1")]
         public static void takeCharmCompass() {
-            PlayerData.instance.gotCharm_2 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Wayward Compass from inventory");
+            removeCharmGeneric(2, "Wayward Compass");
         }
 
         [BindableMethod(name = "Remove Gathering Swarm", category = "Remove Charms 1")]
         public static void takeCharmSwarm() {
-            PlayerData.instance.gotCharm_1 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Gathering Swarm from inventory");
+            removeCharmGeneric(1, "Gathering Swarm");
         }
 
         [BindableMethod(name = "Remove Stalwart Shell", category = "Remove Charms 1")]
         public static void takeCharmStalwart() {
-            PlayerData.instance.gotCharm_4 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Stalwart Shell from inventory");
+            removeCharmGeneric(4, "Stalwart Shell");
         }
 
         [BindableMethod(name = "Remove Soul Catcher", category = "Remove Charms 1")]
         public static void takeCharmCatcher() {
-            PlayerData.instance.gotCharm_20 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Soul Catcher from inventory");
+            removeCharmGeneric(20, "Soul Catcher");
         }
 
         [BindableMethod(name = "Remove Shaman Stone", category = "Remove Charms 1")]
         public static void takeCharmShaman() {
-            PlayerData.instance.gotCharm_19 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Shaman Stone from inventory");
+            removeCharmGeneric(19, "Shaman Stone");
         }
 
         [BindableMethod(name = "Remove Soul Eater", category = "Remove Charms 1")]
         public static void takeCharmEater() {
-            PlayerData.instance.gotCharm_21 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Soul Eater from inventory");
+            removeCharmGeneric(21, "Soul Eater");
         }
 
         [BindableMethod(name = "Remove Dashmaster", category = "Remove Charms 1")]
         public static void takeCharmDashmaster() {
-            PlayerData.instance.gotCharm_31 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Dashmaster from inventory");
+            removeCharmGeneric(31, "Dashmaster");
         }
 
         [BindableMethod(name = "Remove Sprintmaster", category = "Remove Charms 1")]
         public static void takeCharmSprintmaster() {
-            PlayerData.instance.gotCharm_37 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Sprintmaster from inventory");
+            removeCharmGeneric(37, "Sprintmaster");
         }
 
         [BindableMethod(name = "Remove Grubsong", category = "Remove Charms 1")]
         public static void takeCharmGrubsong() {
-            PlayerData.instance.gotCharm_3 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Grubsong from inventory");
+            removeCharmGeneric(3, "Grubsong");
         }
 
         [BindableMethod(name = "Remove Grubberfly's Elegy", category = "Remove Charms 1")]
         public static void takeCharmElegy() {
-            PlayerData.instance.gotCharm_35 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Grubberfly's Elegy from inventory");
+            removeCharmGeneric(35, "Grubberfly's Elegy");
         }
 
         [BindableMethod(name = "Remove Fragile Heart", category = "Remove Charms 2")]
         public static void takeCharmFHeart() {
-            PlayerData.instance.gotCharm_23 = false;
             string fragile = PlayerData.instance.fragileHealth_unbreakable ? "Unbreakable" : "Fragile";
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Removed {fragile} Heart from inventory");
+            removeCharmGeneric(23, $"{fragile} Heart");
         }
 
         [BindableMethod(name = "Remove Fragile Greed", category = "Remove Charms 2")]
         public static void takeCharmFGreed() {
-            PlayerData.instance.gotCharm_24 = false;
             string fragile = PlayerData.instance.fragileGreed_unbreakable ? "Unbreakable" : "Fragile";
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Removed {fragile} Greed from inventory");
+            removeCharmGeneric(24, $"{fragile} Greed");
         }
 
         [BindableMethod(name = "Remove Fragile Strength", category = "Remove Charms 2")]
         public static void takeCharmFStrength() {
-            PlayerData.instance.gotCharm_25 = false;
             string fragile = PlayerData.instance.fragileStrength_unbreakable ? "Unbreakable" : "Fragile";
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Removed {fragile} Strength from inventory");
+            removeCharmGeneric(25, $"{fragile} Strength");
         }
 
         [BindableMethod(name = "Remove Spell Twister", category = "Remove Charms 2")]
         public static void takeCharmTwister() {
-            PlayerData.instance.gotCharm_33 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Spell Twister from inventory");
+            removeCharmGeneric(33, "Spell Twister");
         }
 
         [BindableMethod(name = "Remove Steady Body", category = "Remove Charms 2")]
         public static void takeCharmSBody() {
-            PlayerData.instance.gotCharm_14 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Steady Body from inventory");
+            removeCharmGeneric(14, "Steady Body");
         }
 
         [BindableMethod(name = "Remove Heavy Blow", category = "Remove Charms 2")]
         public static void takeCharmHBlow() {
-            PlayerData.instance.gotCharm_15 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Heavy Blow from inventory");
+            removeCharmGeneric(15, "Heavy Blow");
         }
 
         [BindableMethod(name = "Remove Quick Slash", category = "Remove Charms 2")]
         public static void takeCharmQSlash() {
-            PlayerData.instance.gotCharm_32 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Quick Slash from inventory");
+            removeCharmGeneric(32, "Quick Slash");
         }
 
         [BindableMethod(name = "Remove Longnail", category = "Remove Charms 2")]
         public static void takeCharmLongnail() {
-            PlayerData.instance.gotCharm_18 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Longnail from inventory");
+            removeCharmGeneric(18, "Longnail");
         }
 
         [BindableMethod(name = "Remove Mark of Pride", category = "Remove Charms 2")]
         public static void takeCharmMop() {
-            PlayerData.instance.gotCharm_13 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Mark of Pride from inventory");
+            removeCharmGeneric(13, "Mark of Pride");
         }
 
         [BindableMethod(name = "Remove Fury of the Fallen", category = "Remove Charms 2")]
         public static void takeCharmFury() {
-            PlayerData.instance.gotCharm_6 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Fury of the Fallen from inventory");
+            removeCharmGeneric(6, "Fury of the Fallen");
         }
 
         [BindableMethod(name = "Remove Thorns of Agony", category = "Remove Charms 3")]
         public static void takeCharmThorns() {
-            PlayerData.instance.gotCharm_12 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Thorns of Agony from inventory");
+            removeCharmGeneric(12, "Thorns of Agony");
         }
 
         [BindableMethod(name = "Remove Baldur Shell", category = "Remove Charms 3")]
         public static void takeCharmBaldur() {
-            PlayerData.instance.gotCharm_5 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Baldur Shell from inventory");
+            removeCharmGeneric(5, "Baldur Shell");
         }
 
         [BindableMethod(name = "Remove Flukenest", category = "Remove Charms 3")]
         public static void takeCharmFlukenest() {
-            PlayerData.instance.gotCharm_11 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Flukenest from inventory");
+            removeCharmGeneric(11, "Flukenest");
         }
 
         [BindableMethod(name = "Remove Defender's Crest", category = "Remove Charms 3")]
         public static void takeCharmDCrest() {
-            PlayerData.instance.gotCharm_10 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Defender's Crest from inventory");
+            removeCharmGeneric(10, "Defender's Crest");
         }
 
         [BindableMethod(name = "Remove Glowing Womb", category = "Remove Charms 3")]
         public static void takeCharmWomb() {
-            PlayerData.instance.gotCharm_22 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Glowing Womb from inventory");
+            removeCharmGeneric(22, "Glowing Womb");
         }
 
         [BindableMethod(name = "Remove Quick Focus", category = "Remove Charms 3")]
         public static void takeCharmQFocus() {
-            PlayerData.instance.gotCharm_7 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Quick Focus from inventory");
+            removeCharmGeneric(7, "Quick Focus");
         }
 
         [BindableMethod(name = "Remove Deep Focus", category = "Remove Charms 3")]
         public static void takeCharmDFocus() {
-            PlayerData.instance.gotCharm_34 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Deep Focus from inventory");
+            removeCharmGeneric(34, "Deep Focus");
         }
 
         [BindableMethod(name = "Remove Lifeblood Heart", category = "Remove Charms 3")]
         public static void takeCharmLHeart() {
-            PlayerData.instance.gotCharm_8 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Lifeblood Heart from inventory");
+            removeCharmGeneric(8, "Lifeblood Heart");
         }
 
         [BindableMethod(name = "Remove Lifeblood Core", category = "Remove Charms 3")]
         public static void takeCharmLCore() {
-            PlayerData.instance.gotCharm_9 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Lifeblood Core from inventory");
+            removeCharmGeneric(9, "Lifeblood Core");
         }
 
         [BindableMethod(name = "Remove Joni's Blessing", category = "Remove Charms 3")]
         public static void takeCharmJoni() {
-            PlayerData.instance.gotCharm_27 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Joni's Blessing from inventory");
+            removeCharmGeneric(27, "Joni's Blessing");
         }
 
         [BindableMethod(name = "Remove Hiveblood", category = "Remove Charms 4")]
         public static void takeCharmHive() {
-            PlayerData.instance.gotCharm_29 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Hiveblood from inventory");
+            removeCharmGeneric(29, "Hiveblood");
         }
 
         [BindableMethod(name = "Remove Spore Shroom", category = "Remove Charms 4")]
         public static void takeCharmSpore() {
-            PlayerData.instance.gotCharm_17 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Spore Shroom from inventory");
+            removeCharmGeneric(17, "Spore Shroom");
         }
 
         [BindableMethod(name = "Remove Sharp Shadow", category = "Remove Charms 4")]
         public static void takeCharmSShadow() {
-            PlayerData.instance.gotCharm_16 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Sharp Shadow from inventory");
+            removeCharmGeneric(16, "Sharp Shadow");
         }
 
         [BindableMethod(name = "Remove Shape of Unn", category = "Remove Charms 4")]
         public static void takeCharmUnn() {
-            PlayerData.instance.gotCharm_28 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Shape of Unn from inventory");
+            removeCharmGeneric(28, "Shape of Unn");
         }
 
         [BindableMethod(name = "Remove Nailmaster's Glory", category = "Remove Charms 4")]
         public static void takeCharmNMG() {
-            PlayerData.instance.gotCharm_26 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Nailmaster's Glory from inventory");
+            removeCharmGeneric(26, "Nailmaster's Glory");
         }
 
         [BindableMethod(name = "Remove Weaversong", category = "Remove Charms 4")]
         public static void takeCharmWeavers() {
-            PlayerData.instance.gotCharm_39 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Weaversong from inventory");
+            removeCharmGeneric(39, "Weaversong");
         }
 
         [BindableMethod(name = "Remove Dream Wielder", category = "Remove Charms 4")]
         public static void takeCharmWielder() {
-            PlayerData.instance.gotCharm_30 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Dream Wielder from inventory");
+            removeCharmGeneric(30, "Dream Wielder");
         }
 
         [BindableMethod(name = "Remove Dreamshield", category = "Remove Charms 4")]
         public static void takeCharmDShield() {
-            PlayerData.instance.gotCharm_38 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Dreamshield from inventory");
+            removeCharmGeneric(38, "Dreamshield");
         }
 
         [BindableMethod(name = "Remove Grimmchild", category = "Remove Charms 4")]
         public static void takeCharmGrimm() {
-            PlayerData.instance.gotCharm_40 = false;
-            PlayerData.instance.CountCharms();
-            Console.AddLine("Removed Grimmchild from inventory");
+            removeCharmGeneric(40, "Grimmchild");
         }
 
         [BindableMethod(name = "Remove Kingsoul", category = "Remove Charms 4")]
         public static void takeCharmKingsoul() {
-            PlayerData.instance.gotCharm_36 = false;
             string royal = PlayerData.instance.royalCharmState == 4 ? "Void Heart" : "Kingsoul";
+            removeCharmGeneric(36, royal);
             PlayerData.instance.royalCharmState = 0;
-            PlayerData.instance.CountCharms();
-            Console.AddLine($"Removed {royal} from inventory");
+            PlayerData.instance.gotShadeCharm = false;
+        }
+
+        private static void addCharmGeneric(int id, string name) {
+            PlayerData.instance.SetBoolInternal("gotCharm_" + id, true);
+            PlayerData.instance.hasCharm = true;
+            PlayerData.instance.charmsOwned++;
+            Console.AddLine($"Added {name} to inventory");
+            updateCharmEffects();
+        }
+
+        private static void removeCharmGeneric(int id, string name) {
+            PlayerData.instance.SetBoolInternal("gotCharm_" + id, false);
+            PlayerData.instance.charmsOwned--;
+            if(PlayerData.instance.GetBoolInternal("equippedCharm_" + id)) {
+                PlayerData.instance.SetBoolInternal("equippedCharm_" + id, false);
+                PlayerData.instance.equippedCharms.Remove(id);
+            }
+            Console.AddLine($"Removed {name} from inventory");
+            updateCharmEffects();
+        }
+
+        private static void updateCharmEffects() {
+            PlayMakerFSM.BroadcastEvent("CHARM INDICATOR CHECK");
+            PlayMakerFSM.BroadcastEvent("CHARM EQUIP CHECK");
         }
     }
 }
